@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page d'Inscription</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f7f7f7; }
+        .container { width: 300px; margin: 100px auto; }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Inscription</h2>
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Inscription</button>
+    </div>
+    <script>
+        document.querySelector('button').onclick = function() {
+            alert('Inscription réussie!');
+        };
+    </script>
+</body>
+</html>
